@@ -53,7 +53,7 @@ $sidebar_pos = get_theme_mod('understrap_sidebar_position');
 			</div>
 
 			<main class="col site-main padder_lg_bot" id="main">
-				<div class="row">
+				<div class="row grid-row">
 					<?php if (have_posts()) : ?>
 
 
@@ -61,7 +61,7 @@ $sidebar_pos = get_theme_mod('understrap_sidebar_position');
 						<?php /* Start the Loop */ ?>
 
 						<?php while (have_posts()) : the_post(); ?>
-							<div class="col-md-6 p-sm-0 my-2 m-sm-0">
+							<div class="col-md-6  my-2 m-sm-0 grid_outer">
 								<?php
 								$size = 'homegrid';
 								include(locate_template('template-parts/grid-post-index.php')); ?>
